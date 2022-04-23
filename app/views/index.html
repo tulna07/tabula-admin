@@ -92,7 +92,7 @@
       <!-- Tab panes -->
       <div class="tab-content">
         <!--Danh sách người dùng -->
-        <div role="tabpanel" class="tab-pane  in active" id="DanhSachNguoiDung">
+        <div role="tabpanel" class="tab-pane in active" id="DanhSachNguoiDung">
           <div class="row">
             <div class="col-md-8">
               <!-- BEGIN BUTTOM THÊM MỚI -->
@@ -206,7 +206,7 @@
                   class="form-control"
                   placeholder="Nhập vào Email"
                 />
-              </div>  
+              </div>
               <div class="form-group">
                 <label>Hình Ảnh</label>
                 <input
@@ -214,7 +214,7 @@
                   class="form-control"
                   placeholder="Nhập vào hình ảnh"
                 />
-              </div>             
+              </div>
               <div class="form-group">
                 <label for="">Loại Người Dùng: </label>
                 <select class="form-control" id="loaiNguoiDung">
@@ -238,8 +238,12 @@
               </div>
               <div class="form-group">
                 <label>Mô tả</label>
-                <textarea name="" id="MoTa" class="form-control" placeholder="Nhập vào mô tả"></textarea>
-               
+                <textarea
+                  name=""
+                  id="MoTa"
+                  class="form-control"
+                  placeholder="Nhập vào mô tả"
+                ></textarea>
               </div>
             </div>
             <!-- Modal footer -->
@@ -275,5 +279,11 @@
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/series-label.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+    <!-- Main Scripts -->
+    <script src="../services/service.js"></script>
+    <script src="../models/validation.js"></script>
+    <script src="../models/user.js"></script>
+    <script src="../controllers/main.js"></script>
   </body>
 </html>
