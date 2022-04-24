@@ -16,7 +16,7 @@ function renderHTML(data) {
     content += `
     <tr>
       <td>${i + 1}</td>
-      <td>${user.account}</td>
+      <td class="user-account">${user.account}</td>
       <td>${user.password}</td>
       <td>${user.fullName}</td>
       <td>${user.email}</td>
@@ -159,7 +159,7 @@ function isValidUserInput(
       "(*) Vui lòng không để trống miêu tả"
     ) &&
     validation.isValid(
-      isInValidRange,
+      isValidLength,
       description,
       "tbMieuTa",
       "(*) Miêu tả không vượt quá 60 ký tự",
@@ -210,6 +210,7 @@ function displayUserInfoToInput(id) {
   getElem(
     "modal-footer"
   ).innerHTML = `<button class="btn btn-info" onclick="updateUser(${id});">Update</button>`;
+  getElem("TaiKhoan").disabled = true;
 
   service
     .getUserById(id)
@@ -240,7 +241,16 @@ showUserList();
 
 const addUser = () => {
   const user = getUserInput();
-  if (!user) return;
+  if (
+    !user ||
+    !validation.isValid(
+      isAccountNonExist,
+      user.account,
+      "tbTKNV",
+      "(*) Tài khoản này đã tồn tại"
+    )
+  )
+    return;
 
   service
     .addUser(user)
@@ -274,4 +284,15 @@ getElem("btnThemNguoiDung").addEventListener("click", () => {
   getElem("modal-title").innerHTML = "Add User";
   getElem("modal-footer").innerHTML =
     '<button class="btn btn-primary" onclick="addUser();">Add</button>';
+  getElem("TaiKhoan").disabled = false;
+
+  // Clear user input
+  getElem("TaiKhoan").value = "";
+  getElem("HoTen").value = "";
+  getElem("MatKhau").value = "";
+  getElem("Email").value = "";
+  getElem("HinhAnh").value = "";
+  getElem("loaiNguoiDung").value = "";
+  getElem("loaiNgonNgu").value = "";
+  getElem("MoTa").value = "";
 });

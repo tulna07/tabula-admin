@@ -36,3 +36,11 @@ function isInValidRange(value, validRangeInterval) {
 function isValidPattern(value, regexPattern) {
   return value.match(regexPattern);
 }
+
+function isAccountNonExist(account) {
+  const userAccounts = document.getElementsByClassName("user-account");
+  for (const userAccount of userAccounts)
+    if (account === userAccount.innerHTML) return false;
+
+  return true;
+}
