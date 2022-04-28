@@ -18,29 +18,26 @@ Validation.prototype.isValid = function (
   return false;
 };
 
-function isEmpty(value) {
-  return value.length;
-}
+/**
+ * Validation Checkers
+ *
+ ********************************************/
+const isEmpty = value => value.length;
 
-function isValidLength(value, validLengthInterval) {
-  return (
-    validLengthInterval[0] <= value.length &&
-    value.length <= validLengthInterval[1]
-  );
-}
+const isValidLength = (value, validLengthInterval) =>
+  validLengthInterval[0] <= value.length &&
+  value.length <= validLengthInterval[1];
 
-function isInValidRange(value, validRangeInterval) {
-  return validRangeInterval[0] <= +value && +value <= validRangeInterval[1];
-}
+// function isInValidRange(value, validRangeInterval) {
+//   return validRangeInterval[0] <= +value && +value <= validRangeInterval[1];
+// }
 
-function isValidPattern(value, regexPattern) {
-  return value.match(regexPattern);
-}
+const isValidPattern = (value, regexPattern) => value.match(regexPattern);
 
-function isAccountNonExist(account) {
+const isAccountNonExist = account => {
   const userAccounts = document.getElementsByClassName("user-account");
   for (const userAccount of userAccounts)
     if (account === userAccount.innerHTML) return false;
 
   return true;
-}
+};

@@ -2,9 +2,7 @@
  * Helpers
  *
  ********************************************/
-function getElem(id) {
-  return document.getElementById(id);
-}
+const getElem = id => document.getElementById(id);
 
 const service = new Service();
 const validation = new Validation();
@@ -14,32 +12,32 @@ function renderHTML(data) {
   for (let i = 0; i < data.length; ++i) {
     const user = data[i];
     content += `
-    <tr>
-      <td>${i + 1}</td>
-      <td class="user-account">${user.account}</td>
-      <td>${user.password}</td>
-      <td>${user.fullName}</td>
-      <td>${user.email}</td>
-      <td>${user.language}</td>
-      <td>${user.userType}</td>
-      <td>
-        <button 
-          class="btn btn-warning" 
-          onclick="displayUserInfoToInput(${user.id});"
-          data-toggle="modal"
-          data-target="#myModal"
-        >
-          Edit
-        </button>
-        <button 
-          class="btn btn-danger" 
-          onclick="deleteUser(${user.id});"
-        >
-          X
-        </button>
-      </td>
-    </tr>
-  `;
+      <tr>
+        <td>${i + 1}</td>
+        <td class="user-account">${user.account}</td>
+        <td>${user.password}</td>
+        <td>${user.fullName}</td>
+        <td>${user.email}</td>
+        <td>${user.language}</td>
+        <td>${user.userType}</td>
+        <td>
+          <button 
+            class="btn btn-warning" 
+            onclick="displayUserInfoToInput(${user.id});"
+            data-toggle="modal"
+            data-target="#myModal"
+          >
+            Edit
+          </button>
+          <button 
+            class="btn btn-danger" 
+            onclick="deleteUser(${user.id});"
+          >
+            X
+          </button>
+        </td>
+      </tr>
+    `;
   }
 
   getElem("tblDanhSachNguoiDung").innerHTML = content;
@@ -132,9 +130,7 @@ function isValidUserInput(
 
   // Validate user type
   isValid &= validation.isValid(
-    function (value) {
-      return value !== "Choose User Type";
-    },
+    value => value !== "Choose User Type",
     userType,
     "tbLoaiNguoiDung",
     "(*) Vui lòng chọn loại người dùng hợp lệ"
@@ -142,9 +138,7 @@ function isValidUserInput(
 
   // Validate user language
   isValid &= validation.isValid(
-    function (value) {
-      return value !== "Chose Language";
-    },
+    value => value !== "Choose Language",
     language,
     "tbNgonNgu",
     "(*) Vui lòng chọn ngôn ngữ hợp lệ"
@@ -245,7 +239,7 @@ const addUser = () => {
     !user ||
     !validation.isValid(
       isAccountNonExist,
-      user.account,
+      account,
       "tbTKNV",
       "(*) Tài khoản này đã tồn tại"
     )
