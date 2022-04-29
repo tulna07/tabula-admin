@@ -239,7 +239,7 @@ const addUser = () => {
     !user ||
     !validation.isValid(
       isAccountNonExist,
-      account,
+      user.account,
       "tbTKNV",
       "(*) Tài khoản này đã tồn tại"
     )
