@@ -65,8 +65,22 @@ Check out the webpage -> [Tabula's Client Page](https://scoobytux-tabula.vercel.
 
 ## Tabula's Admin Page Views
 
-![MacBook/ Laptop view 1](screenshots/laptop_view_1.png)
+![Admin laptop view 1](screenshots/admin_laptop_1.png)
 
-![MacBook/ Laptop view 2](screenshots/laptop_view_2.png)
+![Admin laptop view 2](screenshots/admin_laptop_2.png)
 
-![MacBook/ Laptop view 3](screenshots/laptop_view_3.png)
+![Admin laptop view 3](screenshots/admin_laptop_3.png)
+
+## Tabula's Client Page Views
+
+- On Laptop
+
+![Client laptop view 1](screenshots/client_laptop_1.png)
+
+![Client laptop view 2](screenshots/client_laptop_2.png)
+
+![Client laptop view 3](screenshots/client_laptop_3.png)
+
+- On Mobile
+
+![Client mobile view](screenshots/client_mobile.png)
