@@ -1,22 +1,29 @@
-# Tabula's Admin Page
+# Tabula
 
-See the live page [Tabula's Admin Page](https://scoobytux-tabula-admin.vercel.app/ "Tabula's Admin Page") 🎆
+See the admin page [Tabula's Admin Page](https://scoobytux-tabula-admin.vercel.app/ "Tabula's Admin Page") 🎆
 
-Client page: [Tabula's Client Page](https://scoobytux-tabula.vercel.app/ "Tabula's Client Page")
+Client page [Tabula's Client Page](https://scoobytux-tabula.vercel.app/ "Tabula's Client Page") ([source code](https://github.com/scoobytux/tabula "Tabula's Client Page Source Code")) 🎆
 
 ## Introduction
 
-Tabula project's admin page.
+Tabula project with admin and client pages build with JavaScript, Axios, HTML, CSS (SCSS).
+
+Admin can add, delete or update the user at the admin page. The user information displays on client page.
 
 ## Tasks and Roadmap
 
-### Phase 1: Implement main functionalities
-
 > Apr 19 ‑ 29, 2022
+
+### Admin Page
 
 - [x] Created mock API using MockAPI tool. Check out: [API](https://625bc0d1398f3bc782ae7e06.mockapi.io/api/users "API").
 - [x] Called the mock API to implement add, delete, update user and display the user list.
 - [x] Validated inputs when adding or updating user information.
+
+### Client Page
+
+- [x] Crafted the homepage layout from the original website. Made the experts section display dynamically using data from API.
+- [x] Made responsive web design on devices.
 
 <!-- ## Project Structure
 
