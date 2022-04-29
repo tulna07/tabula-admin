@@ -1,0 +1,101 @@
+[
+ {
+  "account": "jroberts",
+  "fullName": "July Roberts",
+  "password": "240Tu*",
+  "email": "jroberts@gmail.io",
+  "userType": "teacher",
+  "language": "ITALIAN",
+  "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+  "image": "teacher_1.jpg",
+  "id": "1"
+ },
+ {
+  "account": "jstone",
+  "fullName": "Jon Stone",
+  "password": "240Tu*",
+  "email": "jstone@gmail.io",
+  "userType": "teacher",
+  "language": "FRENCH",
+  "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+  "image": "teacher_2.jpg",
+  "id": "2"
+ },
+ {
+  "account": "tubeou",
+  "fullName": "Lê Nguyễn Anh Tú",
+  "password": "240Tu*",
+  "email": "tubeou@gmail.io",
+  "userType": "student",
+  "language": "SPANISH",
+  "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+  "image": "tutu.jpg",
+  "id": "3"
+ },
+ {
+  "account": "estone",
+  "fullName": "Emma Stone",
+  "password": "240Tu*",
+  "email": "estone@gmail.io",
+  "userType": "teacher",
+  "language": "JAPANESE",
+  "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+  "image": "teacher_3.jpg",
+  "id": "4"
+ },
+ {
+  "account": "mlee",
+  "fullName": "Mark Lee",
+  "password": "240Tu*",
+  "email": "mlee@gmail.io",
+  "userType": "teacher",
+  "language": "CHINESE",
+  "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+  "image": "teacher_4.jpg",
+  "id": "5"
+ },
+ {
+  "account": "jdoe",
+  "fullName": "John Doe",
+  "password": "240Tu*",
+  "email": "jdoe@gmail.io",
+  "userType": "teacher",
+  "language": "RUSSIAN",
+  "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+  "image": "teacher_5.jpg",
+  "id": "6"
+ },
+ {
+  "account": "jsmith",
+  "fullName": "Jane Smith",
+  "password": "240Tu*",
+  "email": "jsmith@gmail.io",
+  "userType": "teacher",
+  "language": "SWEDEN",
+  "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+  "image": "teacher_6.jpg",
+  "id": "7"
+ },
+ {
+  "account": "halverez",
+  "fullName": "Hanna Alverez",
+  "password": "240Tu*",
+  "email": "halverez@gmail.io",
+  "userType": "teacher",
+  "language": "SPANISH",
+  "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+  "image": "teacher_7.jpg",
+  "id": "8"
+ },
+ {
+  "account": "jrose",
+  "fullName": "July Rose",
+  "password": "2406Tu*",
+  "email": "jrose@gmail.io",
+  "userType": "teacher",
+  "language": "JAPANESE",
+  "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+  "image": "teacher_8.jpg",
+  "id": "9"
+ }
+]
