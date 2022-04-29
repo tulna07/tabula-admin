@@ -6,7 +6,7 @@ Client page [Tabula's Client Page](https://scoobytux-tabula.vercel.app/ "Tabula'
 
 ## Introduction
 
-Tabula project with admin and client pages build with JavaScript, Axios, HTML, CSS (SCSS).
+Tabula project with admin and client pages build with JavaScript, Axios, HTML, CSS (SCSS), Bootstrap.
 
 Admin can add, delete or update the user at the admin page. The user information displays on client page.
 
@@ -47,10 +47,20 @@ $PROJECT_ROOT
 
 ### Installation and Run
 
+### Admin Page
+
 Check out the webpage -> [Tabula's Admin Page](https://scoobytux-tabula-admin.vercel.app/ "Tabula's Admin Page") or run locally:
 
 - `git clone https://github.com/scoobytux/tabula-admin.git`
 - `cd tabula-admin`
+- Open `index.html` file
+
+### Client Page
+
+Check out the webpage -> [Tabula's Client Page](https://scoobytux-tabula.vercel.app/ "Tabula's Client Page") or run locally:
+
+- `git clone https://github.com/scoobytux/tabula.git`
+- `cd tabula`
 - Open `index.html` file
 
 ## Tabula's Admin Page Views
