@@ -45,7 +45,7 @@ $PROJECT_ROOT
 └── index.html
 ``` -->
 
-### Installation and Run
+## Installation and Run
 
 ### Admin Page
 
